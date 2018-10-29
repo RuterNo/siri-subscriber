@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      lang="en"
+      xsi:schemaLocation="http://www.thymeleaf.org ">
+<head>
+  <title>Siri Subscriber</title>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+
+  <link rel="stylesheet"
+        href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
+        integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
+        crossorigin="anonymous">
+  <style>
+    body {
+      background-color: #282828;
+      color: #98971a;
+    }
+
+    .topbar {
+      background-color: #1d2021;
+      padding-left: 1%;
+    }
+
+    .profile {
+      padding-top: 5px;
+    }
+
+    .table-dark {
+      background-color: #1d2021;
+    }
+
+    th {
+      color: #d65d0e;
+    }
+
+    tr {
+      color: #98971a;
+    }
+
+    pre {
+      max-height: 450px;
+      max-width: 100%;
+      overflow-y: scroll;
+      background-color: #1d2021;
+      color: #a89984;
+    }
+
+    .logs {
+      padding: 5px;
+    }
+
+    .badge-dark {
+      background-color: #1d2021;
+      color: #928374;
+      margin-bottom: 2px;
+    }
+
+    .btn-dark {
+      background-color: #1d2021;
+      color: #928374;
+    }
+
+    .dark-gruv {
+      background-color: #1d2021;
+      color: #928374;
+    }
+
+    .modal-content textarea.form-control {
+      max-width: 100%;
+    }
+
+
+  </style>
+</head>
+<body>
+
+
+<div class="container-fluid">
+
+  <div class="row navbar-header topbar">
+    <div class="col-md">
+      <h1><b># SIRI Subscriber</b></h1>
+    </div>
+    <div class="col-md">
+      <h6><span class="badge badge-dark align-bottom"><b>Profile:&nbsp;<span
+          th:utext="${environment}">test</span></b></span></h6>
+    </div>
+  </div>
+
+  <div class="row justify-content-md-center profile topic">
+    &nbsp;
+  </div>
+
+  <div class="row">
+    <table class="table table-striped table-hover table-dark">
+      <thead>
+      <tr>
+        <th>#</th>
+        <th>Type</th>
+        <th>Name</th>
+        <th>RequestorRef</th>
+        <th>SubscriberRef</th>
+        <th>Duration</th>
+        <th>Heartbeat</th>
+        <th>Active</th>
+        <th>SSL</th>
+        <th>Endpoint</th>
+        <th></th>
+      </tr>
+      </thead>
+      <tbody style="cursor: pointer">
+      <tr th:each="subscription,iterStat : ${subscriptions}"
+          th:onclick="'getSubs(\''+ ${subscription.getSubscriptionId()} + '\');'">
+        <td th:utext="${iterStat.index+1}" data-toggle="tooltip" data-placement="bottom"
+            style="cursor: pointer" th:title="${subscription.getSubscriptionId()}">#
+        </td>
+        <td th:utext="${subscription.getSubscriptionType()}">type</td>
+        <td th:utext="${subscription.getName()}">name</td>
+        <td th:utext="${subscription.getRequestorRef()}">getRequestorRef</td>
+        <td th:utext="${subscription.getSubscriberRef()}">getSubscriberRef</td>
+        <td th:utext="${subscription.getSubscriptionDuration()}">Duration</td>
+        <td th:utext="${subscription.getHeartbeatInterval()}">heartbeatInterval</td>
+        <td th:utext="${subscription.isActive()}">active</td>
+        <td th:utext="${subscription.isSsl()}">ssl</td>
+        <td><a th:href="${subscription.getSubscribeEndpoint()}" data-toggle="tooltip"
+               data-placement="bottom"
+               th:title="${subscription.getSubscribeEndpoint()}">Endpoint</a></td>
+        <td>
+          <span th:if="${!subscription.isActive()}" style="cursor: pointer" class="fa fa-play"
+                th:onclick="'startSubscription(\''+ ${subscription.getSubscriptionId()} + '\');'">
+          </span>
+          <span th:if="${subscription.isActive()}" style="cursor: pointer"
+                class="fas fa-stop-circle"
+                th:onclick="'stopSubscription(\''+ ${subscription.getSubscriptionId()} + '\');'">
+          </span>
+        </td>
+      </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="row">
+    <pre class="logs"><code id="log-data">logs...
+    </code></pre>
+  </div>
+
+  <div class="row justify-content-md-center">
+    <button type="button" id="refresh-logs" class="btn btn-dark btn-sm topic"><i
+        class="fas fa-sync topic"></i> refresh
+    </button>
+  </div>
+
+
+</div>
+<!-- Modal -->
+<div class="modal fade dark-gruv" id="edit-subscription-modal" tabindex="-1" role="dialog"
+     aria-labelledby="edit-subscription-modal-label" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered dark-gruv" role="document">
+    <div class="modal-content dark-gruv">
+      <div class="modal-header dark-gruv">
+        <h5 class="modal-title dark-gruv" id="edit-subscription-modal-label">Edit</h5>
+        <button type="button" class="close dark-gruv" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true" class="dark-gruv">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body dark-gruv">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col">
+              <label for="sub-textarea"></label>
+              <textarea class="dark-gruv" id="sub-textarea"
+                        style="height: 600px; width:inherit;"></textarea>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer dark-gruv">
+        <button type="button" class="btn btn-secondary btn-dark" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary btn-dark">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+
+<script>
+
+  $(document).ready(function () {
+    updateLogs();
+
+    $("#refresh-logs").click(function () {
+      updateLogs();
+    });
+  });
+
+  function updateLogs() {
+    $.get("/actuator/logfile", function (data, status) {
+      $("#log-data").text(data);
+    });
+  }
+
+  function getSubs(e) {
+    console.log(e);
+    $.get("/admin/" + e, function (data, status) {
+      $("#sub-textarea").text(JSON.stringify(data));
+      $("#edit-subscription-modal").modal('toggle');
+
+    })
+  }
+
+  function subForm() {
+    $.ajax({
+      url: '/admin/add',
+      type: 'post',
+      data: $('#subscription-form').serialize(),
+      success: function () {
+        window.location.reload();
+      }
+    });
+  }
+
+  function stopSubscription(id) {
+    $.ajax({
+      url: '/admin/stop/' + id,
+      type: 'post',
+      success: function () {
+        window.location.reload();
+      }
+    });
+  }
+
+  function startSubscription(id) {
+    $.ajax({
+      url: '/admin/start/' + id,
+      type: 'post',
+      success: function () {
+        window.location.reload();
+      }
+    });
+  }
+
+</script>
+</body>
+</html>

@@ -1,0 +1,16 @@
+build/
+out
+
+gradle/
+.gradle
+*.swp
+*.iml
+.idea/
+
+
+/gradlew
+/gradlew.bat
+/tmp/
+/siri-subscriber.iml
+target/
+/logs/

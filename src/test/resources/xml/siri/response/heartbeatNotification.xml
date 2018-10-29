@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Siri version="2.0" xmlns="http://www.siri.org.uk/siri">
+    <HeartbeatNotification>
+        <RequestTimestamp>2018-08-21T13:49:51.631+02:00</RequestTimestamp>
+        <ProducerRef>test-id</ProducerRef>
+        <Status>true</Status>
+        <ServiceStartedTime>2018-08-21T13:49:46.439+02:00</ServiceStartedTime>
+    </HeartbeatNotification>
+</Siri>

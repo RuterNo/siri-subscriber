@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Siri version="2.0" xmlns="http://www.siri.org.uk/siri">
+    <SubscriptionRequest>
+        <RequestTimestamp>2016-10-05T11:02:19.45+02:00</RequestTimestamp>
+        <RequestorRef>requestorRef</RequestorRef>
+        <MessageIdentifier>13237fd4-1d37-4c40-9bbe-38f59f81394b</MessageIdentifier>
+        <ConsumerAddress>address</ConsumerAddress>
+        <SubscriptionContext>
+            <HeartbeatInterval>PT2M</HeartbeatInterval>
+        </SubscriptionContext>
+        <VehicleMonitoringSubscriptionRequest>
+            <SubscriberRef>subscriberRef</SubscriberRef>
+            <SubscriptionIdentifier>8d87eba2-3b85-4193-87b9-7aded643db3b</SubscriptionIdentifier>
+            <InitialTerminationTime>2016-10-05T11:02:19.471+02:00</InitialTerminationTime>
+            <VehicleMonitoringRequest version="2.0">
+                <RequestTimestamp>2016-10-05T11:02:51.727+02:00</RequestTimestamp>
+            </VehicleMonitoringRequest>
+        </VehicleMonitoringSubscriptionRequest>
+    </SubscriptionRequest>
+</Siri>

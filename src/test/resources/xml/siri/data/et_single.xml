@@ -1,0 +1,248 @@
+©<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Siri xmlns="http://www.siri.org.uk/siri" xmlns:ns2="http://www.ifopt.org.uk/acsb" xmlns:ns3="http://www.ifopt.org.uk/ifopt" xmlns:ns4="http://datex2.eu/schema/2_0RC1/2_0" version="2.0">
+    <ServiceDelivery>
+        <ResponseTimestamp>2017-11-13T15:43:31.296+01:00</ResponseTimestamp>
+        <RequestMessageRef>b07ff5b5-a412-4781-b3b4-2a1ba6af3d1c</RequestMessageRef>
+        <MoreData>true</MoreData>
+        <EstimatedTimetableDelivery version="2.0">
+            <EstimatedJourneyVersionFrame>
+                <RecordedAtTime>2017-11-13T15:43:31.296+01:00</RecordedAtTime>
+                <EstimatedVehicleJourney>
+                    <LineRef>RUT:Line:21</LineRef>
+                    <DirectionRef>1</DirectionRef>
+                    <FramedVehicleJourneyRef>
+                        <DataFrameRef>2017-11-13</DataFrameRef>
+                        <DatedVehicleJourneyRef>RUT:ServiceJourney:21-105</DatedVehicleJourneyRef>
+                    </FramedVehicleJourneyRef>
+                    <JourneyPatternRef>21:401</JourneyPatternRef>
+                    <PublishedLineName>21</PublishedLineName>
+                    <OperatorRef>Unibuss</OperatorRef>
+                    <Monitored>true</Monitored>
+                    <MonitoringError></MonitoringError>
+                    <BlockRef>Unibuss:2101:9f</BlockRef>
+                    <EstimatedCalls>
+                        <EstimatedCall>
+                            <StopPointRef>NSR:Quay:7693</StopPointRef>
+                            <VisitNumber>1</VisitNumber>
+                            <StopPointName>Tjuvholmen</StopPointName>
+                            <DestinationDisplay>Helsfyr T</DestinationDisplay>
+                            <AimedDepartureTime>2017-11-13T16:45:00+01:00</AimedDepartureTime>
+                            <ExpectedDepartureTime>2017-11-13T16:45:00+01:00</ExpectedDepartureTime>
+                            <DepartureeePlatformName>1</DepartureeePlatformName>
+                        </EstimatedCall>
+                        <EstimatedCall>
+                            <StopPointRef>NSR:Quay:7791</StopPointRef>
+                            <VisitNumber>2</VisitNumber>
+                            <StopPointName>Observatoriegata</StopPointName>
+                            <DestinationDisplay>Helsfyr T</DestinationDisplay>
+                            <ExpectedArrivalTime>2017-11-13T16:47:00+01:00</ExpectedArrivalTime>
+                            <AimedDepartureTime>2017-11-13T16:47:00+01:00</AimedDepartureTime>
+                            <ExpectedDepartureTime>2017-11-13T16:47:00+01:00</ExpectedDepartureTime>
+                            <DeparturePlatformName>1</DeparturePlatformName>
+                        </EstimatedCall>
+                        <EstimatedCall>
+                            <StopPointRef>NSR:Quay:7747</StopPointRef>
+                            <VisitNumber>3</VisitNumber>
+                            <StopPointName>Lapsetorvet</StopPointName>
+                            <DestinationDisplay>Helsfyr T</DestinationDisplay>
+                            <ExpectedArrivalTime>2017-11-13T16:48:00+01:00</ExpectedArrivalTime>
+                            <AimedDepartureTime>2017-11-13T16:48:00+01:00</AimedDepartureTime>
+                            <ExpectedDepartureTime>2017-11-13T16:48:00+01:00</ExpectedDepartureTime>
+                            <DeparturePlatformName>2</DeparturePlatformName>
+                        </EstimatedCall>
+                        <EstimatedCall>
+                            <StopPointRef>NSR:Quay:11474</StopPointRef>
+                            <VisitNumber>4</VisitNumber>
+                            <StopPointName>Riddervolds plass</StopPointName>
+                            <DestinationDisplay>Helsfyr T</DestinationDisplay>
+                            <ExpectedArrivalTime>2017-11-13T16:50:00+01:00</ExpectedArrivalTime>
+                            <AimedDepartureTime>2017-11-13T16:50:00+01:00</AimedDepartureTime>
+                            <ExpectedDepartureTime>2017-11-13T16:50:00+01:00</ExpectedDepartureTime>
+                            <DeparturePlatformName>21</DeparturePlatformName>
+                        </EstimatedCall>
+                        <EstimatedCall>
+                            <StopPointRef>NSR:Quay:8226</StopPointRef>
+                            <VisitNumber>5</VisitNumber>
+                            <StopPointName>Uranienborgveien</StopPointName>
+                            <DestinationDisplay>Helsfyr T</DestinationDisplay>
+                            <ExpectedArrivalTime>2017-11-13T16:51:00+01:00</ExpectedArrivalTime>
+                            <AimedDepartureTime>2017-11-13T16:51:00+01:00</AimedDepartureTime>
+                            <ExpectedDepartureTime>2017-11-13T16:51:00+01:00</ExpectedDepartureTime>
+                            <DeparturePlatformName>1</DeparturePlatformName>
+                        </EstimatedCall>
+                        <EstimatedCall>
+                            <StopPointRef>NSR:Quay:8129</StopPointRef>
+                            <VisitNumber>6</VisitNumber>
+                            <StopPointName>Homansbyen</StopPointName>
+                            <DestinationDisplay>Helsfyr T</DestinationDisplay>
+                            <ExpectedArrivalTime>2017-11-13T16:53:00+01:00</ExpectedArrivalTime>
+                            <AimedDepartureTime>2017-11-13T16:53:00+01:00</AimedDepartureTime>
+                            <ExpectedDepartureTime>2017-11-13T16:53:00+01:00</ExpectedDepartureTime>
+                            <DeparturePlatformName>21</DeparturePlatformName>
+                        </EstimatedCall>
+                        <EstimatedCall>
+                            <StopPointRef>NSR:Quay:11487</StopPointRef>
+                            <VisitNumber>7</VisitNumber>
+                            <StopPointName>Bislett</StopPointName>
+                            <DestinationDisplay>Helsfyr T</DestinationDisplay>
+                            <ExpectedArrivalTime>2017-11-13T16:54:00+01:00</ExpectedArrivalTime>
+                            <AimedDepartureTime>2017-11-13T16:54:00+01:00</AimedDepartureTime>
+                            <ExpectedDepartureTime>2017-11-13T16:54:00+01:00</ExpectedDepartureTime>
+                            <DeparturePlatformName>21</DeparturePlatformName>
+                        </EstimatedCall>
+                        <EstimatedCall>
+                            <StopPointRef>NSR:Quay:11513</StopPointRef>
+                            <VisitNumber>8</VisitNumber>
+                            <StopPointName>Sofies plass</StopPointName>
+                            <DestinationDisplay>Helsfyr T</DestinationDisplay>
+                            <ExpectedArrivalTime>2017-11-13T16:55:00+01:00</ExpectedArrivalTime>
+                            <AimedDepartureTime>2017-11-13T16:55:00+01:00</AimedDepartureTime>
+                            <ExpectedDepartureTime>2017-11-13T16:55:00+01:00</ExpectedDepartureTime>
+                            <DeparturePlatformName>1</DeparturePlatformName>
+                        </EstimatedCall>
+                        <EstimatedCall>
+                            <StopPointRef>NSR:Quay:11528</StopPointRef>
+                            <VisitNumber>9</VisitNumber>
+                            <StopPointName>St. Hanshaugen</StopPointName>
+                            <DestinationDisplay>Helsfyr T</DestinationDisplay>
+                            <ExpectedArrivalTime>2017-11-13T16:57:00+01:00</ExpectedArrivalTime>
+                            <AimedDepartureTime>2017-11-13T16:57:00+01:00</AimedDepartureTime>
+                            <ExpectedDepartureTime>2017-11-13T16:57:00+01:00</ExpectedDepartureTime>
+                            <DeparturePlatformName>21</DeparturePlatformName>
+                        </EstimatedCall>
+                        <EstimatedCall>
+                            <StopPointRef>NSR:Quay:11557</StopPointRef>
+                            <VisitNumber>10</VisitNumber>
+                            <StopPointName>Falck Ytters plass</StopPointName>
+                            <DestinationDisplay>Helsfyr T</DestinationDisplay>
+                            <ExpectedArrivalTime>2017-11-13T16:58:00+01:00</ExpectedArrivalTime>
+                            <AimedDepartureTime>2017-11-13T16:58:00+01:00</AimedDepartureTime>
+                            <ExpectedDepartureTime>2017-11-13T16:58:00+01:00</ExpectedDepartureTime>
+                            <DeparturePlatformName>1</DeparturePlatformName>
+                        </EstimatedCall>
+                        <EstimatedCall>
+                            <StopPointRef>NSR:Quay:11548</StopPointRef>
+                            <VisitNumber>11</VisitNumber>
+                            <StopPointName>Alexander Kiellands plass</StopPointName>
+                            <DestinationDisplay>Helsfyr T</DestinationDisplay>
+                            <ExpectedArrivalTime>2017-11-13T16:59:00+01:00</ExpectedArrivalTime>
+                            <AimedDepartureTime>2017-11-13T16:59:00+01:00</AimedDepartureTime>
+                            <ExpectedDepartureTime>2017-11-13T16:59:00+01:00</ExpectedDepartureTime>
+                            <DeparturePlatformName>21</DeparturePlatformName>
+                        </EstimatedCall>
+                        <EstimatedCall>
+                            <StopPointRef>NSR:Quay:11853</StopPointRef>
+                            <VisitNumber>12</VisitNumber>
+                            <StopPointName>Sannergata</StopPointName>
+                            <DestinationDisplay>Helsfyr T</DestinationDisplay>
+                            <ExpectedArrivalTime>2017-11-13T17:01:00+01:00</ExpectedArrivalTime>
+                            <AimedDepartureTime>2017-11-13T17:01:00+01:00</AimedDepartureTime>
+                            <ExpectedDepartureTime>2017-11-13T17:01:00+01:00</ExpectedDepartureTime>
+                            <DeparturePlatformName>1</DeparturePlatformName>
+                        </EstimatedCall>
+                        <EstimatedCall>
+                            <StopPointRef>NSR:Quay:11861</StopPointRef>
+                            <VisitNumber>13</VisitNumber>
+                            <StopPointName>Københavngata</StopPointName>
+                            <DestinationDisplay>Helsfyr T</DestinationDisplay>
+                            <ExpectedArrivalTime>2017-11-13T17:04:00+01:00</ExpectedArrivalTime>
+                            <AimedDepartureTime>2017-11-13T17:04:00+01:00</AimedDepartureTime>
+                            <ExpectedDepartureTime>2017-11-13T17:04:00+01:00</ExpectedDepartureTime>
+                            <DeparturePlatformName>1</DeparturePlatformName>
+                        </EstimatedCall>
+                        <EstimatedCall>
+                            <StopPointRef>NSR:Quay:11049</StopPointRef>
+                            <VisitNumber>14</VisitNumber>
+                            <StopPointName>Carl Berners plass</StopPointName>
+                            <DestinationDisplay>Helsfyr T</DestinationDisplay>
+                            <ExpectedArrivalTime>2017-11-13T17:05:00+01:00</ExpectedArrivalTime>
+                            <AimedDepartureTime>2017-11-13T17:05:00+01:00</AimedDepartureTime>
+                            <ExpectedDepartureTime>2017-11-13T17:05:00+01:00</ExpectedDepartureTime>
+                            <DeparturePlatformName>21</DeparturePlatformName>
+                        </EstimatedCall>
+                        <EstimatedCall>
+                            <StopPointRef>NSR:Quay:11090</StopPointRef>
+                            <VisitNumber>15</VisitNumber>
+                            <StopPointName>Carl Berners plass T</StopPointName>
+                            <DestinationDisplay>Helsfyr T</DestinationDisplay>
+                            <ExpectedArrivalTime>2017-11-13T17:06:00+01:00</ExpectedArrivalTime>
+                            <AimedDepartureTime>2017-11-13T17:06:00+01:00</AimedDepartureTime>
+                            <ExpectedDepartureTime>2017-11-13T17:06:00+01:00</ExpectedDepartureTime>
+                            <DeparturePlatformName>1</DeparturePlatformName>
+                        </EstimatedCall>
+                        <EstimatedCall>
+                            <StopPointRef>NSR:Quay:102016</StopPointRef>
+                            <VisitNumber>16</VisitNumber>
+                            <StopPointName>Fougners vei</StopPointName>
+                            <DestinationDisplay>Helsfyr T</DestinationDisplay>
+                            <ExpectedArrivalTime>2017-11-13T17:07:00+01:00</ExpectedArrivalTime>
+                            <AimedDepartureTime>2017-11-13T17:07:00+01:00</AimedDepartureTime>
+                            <ExpectedDepartureTime>2017-11-13T17:07:00+01:00</ExpectedDepartureTime>
+                            <DeparturePlatformName>1</DeparturePlatformName>
+                        </EstimatedCall>
+                        <EstimatedCall>
+                            <StopPointRef>NSR:Quay:11083</StopPointRef>
+                            <VisitNumber>17</VisitNumber>
+                            <StopPointName>Einars vei</StopPointName>
+                            <DestinationDisplay>Helsfyr T</DestinationDisplay>
+                            <ExpectedArrivalTime>2017-11-13T17:07:00+01:00</ExpectedArrivalTime>
+                            <AimedDepartureTime>2017-11-13T17:07:00+01:00</AimedDepartureTime>
+                            <ExpectedDepartureTime>2017-11-13T17:07:00+01:00</ExpectedDepartureTime>
+                            <DeparturePlatformName>1</DeparturePlatformName>
+                        </EstimatedCall>
+                        <EstimatedCall>
+                            <StopPointRef>NSR:Quay:11069</StopPointRef>
+                            <VisitNumber>18</VisitNumber>
+                            <StopPointName>Hasle</StopPointName>
+                            <DestinationDisplay>Helsfyr T</DestinationDisplay>
+                            <ExpectedArrivalTime>2017-11-13T17:09:00+01:00</ExpectedArrivalTime>
+                            <AimedDepartureTime>2017-11-13T17:09:00+01:00</AimedDepartureTime>
+                            <ExpectedDepartureTime>2017-11-13T17:09:00+01:00</ExpectedDepartureTime>
+                            <DeparturePlatformName>1</DeparturePlatformName>
+                        </EstimatedCall>
+                        <EstimatedCall>
+                            <StopPointRef>NSR:Quay:11116</StopPointRef>
+                            <VisitNumber>19</VisitNumber>
+                            <StopPointName>Gladengveien</StopPointName>
+                            <DestinationDisplay>Helsfyr T</DestinationDisplay>
+                            <ExpectedArrivalTime>2017-11-13T17:10:00+01:00</ExpectedArrivalTime>
+                            <AimedDepartureTime>2017-11-13T17:10:00+01:00</AimedDepartureTime>
+                            <ExpectedDepartureTime>2017-11-13T17:10:00+01:00</ExpectedDepartureTime>
+                            <DeparturePlatformName>1</DeparturePlatformName>
+                        </EstimatedCall>
+                        <EstimatedCall>
+                            <StopPointRef>NSR:Quay:11122</StopPointRef>
+                            <VisitNumber>20</VisitNumber>
+                            <StopPointName>Valle</StopPointName>
+                            <DestinationDisplay>Helsfyr T</DestinationDisplay>
+                            <ExpectedArrivalTime>2017-11-13T17:12:00+01:00</ExpectedArrivalTime>
+                            <AimedDepartureTime>2017-11-13T17:12:00+01:00</AimedDepartureTime>
+                            <ExpectedDepartureTime>2017-11-13T17:12:00+01:00</ExpectedDepartureTime>
+                            <DeparturePlatformName>1</DeparturePlatformName>
+                        </EstimatedCall>
+                        <EstimatedCall>
+                            <StopPointRef>NSR:Quay:11129</StopPointRef>
+                            <VisitNumber>21</VisitNumber>
+                            <StopPointName>Fyrstikktorget</StopPointName>
+                            <DestinationDisplay>Helsfyr T</DestinationDisplay>
+                            <ExpectedArrivalTime>2017-11-13T17:13:00+01:00</ExpectedArrivalTime>
+                            <AimedDepartureTime>2017-11-13T17:13:00+01:00</AimedDepartureTime>
+                            <ExpectedDepartureTime>2017-11-13T17:13:00+01:00</ExpectedDepartureTime>
+                            <DeparturePlatformName>1</DeparturePlatformName>
+                        </EstimatedCall>
+                        <EstimatedCall>
+                            <StopPointRef>NSR:Quay:11140</StopPointRef>
+                            <VisitNumber>22</VisitNumber>
+                            <StopPointName>Helsfyr T</StopPointName>
+                            <DestinationDisplay>Helsfyr T</DestinationDisplay>
+                            <AimedArrivalTime>2017-11-13T17:14:00+01:00</AimedArrivalTime>
+                            <ExpectedArrivalTime>2017-11-13T17:14:00+01:00</ExpectedArrivalTime>
+                            <DeparturePlatformName>10</DeparturePlatformName>
+                        </EstimatedCall>
+                    </EstimatedCalls>
+                    <IsCompleteStopSequence>true</IsCompleteStopSequence>
+                </EstimatedVehicleJourney>
+            </EstimatedJourneyVersionFrame>
+        </EstimatedTimetableDelivery>
+    </ServiceDelivery>
+</Siri>

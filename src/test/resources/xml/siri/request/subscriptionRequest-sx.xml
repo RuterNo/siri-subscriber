@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Siri version="2.0" xmlns="http://www.siri.org.uk/siri">
+    <SubscriptionRequest>
+        <RequestTimestamp>2018-08-16T12:02:48.265+02:00[Europe/Oslo]</RequestTimestamp>
+        <RequestorRef>requestorRef</RequestorRef>
+        <MessageIdentifier>8e05d69b-3bc3-49cd-a6d0-59c6ec6a7959</MessageIdentifier>
+        <ConsumerAddress>address</ConsumerAddress>
+        <SubscriptionContext>
+            <HeartbeatInterval>PT2M</HeartbeatInterval>
+        </SubscriptionContext>
+        <SituationExchangeSubscriptionRequest>
+            <SubscriberRef>subscriberRef</SubscriberRef>
+            <SubscriptionIdentifier>b215117f-a5e2-4cfa-bb85-718446fd87c3</SubscriptionIdentifier>
+            <InitialTerminationTime>2018-08-16T12:12:48.283+02:00[Europe/Oslo]</InitialTerminationTime>
+            <SituationExchangeRequest version="2.0">
+                <RequestTimestamp>2018-08-16T12:02:48.283+02:00[Europe/Oslo]</RequestTimestamp>
+            </SituationExchangeRequest>
+        </SituationExchangeSubscriptionRequest>
+    </SubscriptionRequest>
+</Siri>

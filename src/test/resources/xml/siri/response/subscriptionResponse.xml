@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Siri version="2.0" xmlns="http://www.siri.org.uk/siri" xmlns:ns2="http://www.ifopt.org.uk/acsb" xmlns:ns4="http://datex2.eu/schema/2_0RC1/2_0" xmlns:ns3="http://www.ifopt.org.uk/ifopt">
+  <SubscriptionResponse>
+    <ResponseTimestamp>2018-09-03T21:29:54.408+02:00</ResponseTimestamp>
+    <ResponderRef>test-id</ResponderRef>
+    <RequestMessageRef>95a107ef-bc21-4b13-a78d-a63802221aad</RequestMessageRef>
+    <ResponseStatus>
+      <ResponseTimestamp>2018-09-03T21:29:54.408+02:00</ResponseTimestamp>
+      <RequestMessageRef>f422dd38-3b61-49f0-8e6e-e0ef7e78f891</RequestMessageRef>
+      <SubscriptionRef>subscriberRef</SubscriptionRef>
+      <Status>true</Status>
+    </ResponseStatus>
+    <ServiceStartedTime>2018-09-03T21:29:37.796+02:00</ServiceStartedTime>
+  </SubscriptionResponse>
+</Siri>

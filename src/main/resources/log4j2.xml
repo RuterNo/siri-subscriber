@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration status="WARN" shutdownHook="disable">
+  <Properties>
+    <Property name="basePath">logs</Property>
+    <Property name="PID">????</Property>
+  </Properties>
+
+  <Appenders>
+    <Console name="Console" target="SYSTEM_OUT">
+      <PatternLayout
+        pattern="%style{%d{HH:mm}}{white} %highlight{%-5level} %style{${sys:PID}} %style{[%-10.10t]}{magenta} %style{%c{1.1}}{cyan}: %m%n%wEx"/>
+    </Console>
+
+    <RollingFile fileName="${basePath}/subscriber.log"
+      filePattern="${basePath}/subscriber-%d{dd-MM-yyyy}.log" name="fileLogger">
+      <PatternLayout pattern="%d{HH:mm} %c{1}: %m%n%wEx"/>
+      <Policies>
+        <TimeBasedTriggeringPolicy interval="1" modulate="true"/>
+        <SizeBasedTriggeringPolicy size="500 KB"/>
+      </Policies>
+    </RollingFile>
+  </Appenders>
+
+  <Loggers>
+    <Root level="WARN">
+      <AppenderRef ref="Console"/>
+      <AppenderRef ref="fileLogger"/>
+    </Root>
+
+  </Loggers>
+</Configuration>

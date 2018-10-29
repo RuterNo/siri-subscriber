@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Siri
+  xmlns="http://www.siri.org.uk/siri"
+  xmlns:ns2="http://www.ifopt.org.uk/acsb"
+  xmlns:ns3="http://www.ifopt.org.uk/ifopt"
+  xmlns:ns4="http://datex2.eu/schema/2_0RC1/2_0" version="2.0">
+  <ServiceDelivery>
+    <ResponseTimestamp>2018-10-10T13:47:48.399+02:00</ResponseTimestamp>
+    <ProducerRef>RUT</ProducerRef>
+    <MoreData>true</MoreData>
+    <VehicleMonitoringDelivery version="2.0">
+      <ResponseTimestamp>2018-10-10T13:47:48.399+02:00</ResponseTimestamp>
+      <VehicleActivity>
+        <RecordedAtTime>2018-10-10T13:33:11.534+02:00</RecordedAtTime>
+        <ItemIdentifier>702056@20c2e3a3-1659-41d3-b1a2-1411978b1d43@565:133:3-13304</ItemIdentifier>
+        <ValidUntilTime>2018-10-10T13:43:11.534+02:00</ValidUntilTime>
+        <ProgressBetweenStops>
+          <LinkDistance>274</LinkDistance>
+          <Percentage>53.65</Percentage>
+        </ProgressBetweenStops>
+        <MonitoredVehicleJourney>
+          <LineRef>565</LineRef>
+          <DirectionRef>2</DirectionRef>
+          <FramedVehicleJourneyRef>
+            <DataFrameRef>2018-10-10</DataFrameRef>
+            <DatedVehicleJourneyRef>565:133:3-13304</DatedVehicleJourneyRef>
+          </FramedVehicleJourneyRef>
+          <JourneyPatternRef>565:304</JourneyPatternRef>
+          <PublishedLineName>565</PublishedLineName>
+          <OperatorRef>Nobina</OperatorRef>
+          <OriginRef>2160005:1</OriginRef>
+          <OriginName>Nesoddtangen</OriginName>
+          <DestinationRef>2160225:1</DestinationRef>
+          <DestinationName>Torneveien</DestinationName>
+          <HeadwayService>false</HeadwayService>
+          <OriginAimedDepartureTime>2018-10-10T12:58:00+02:00</OriginAimedDepartureTime>
+          <DestinationAimedArrivalTime>2018-10-10T13:33:00+02:00</DestinationAimedArrivalTime>
+          <Monitored>true</Monitored>
+          <InCongestion>false</InCongestion>
+          <InPanic>false</InPanic>
+          <DataSource>RUT</DataSource>
+          <VehicleLocation srsName="real">
+            <Longitude>10.619167</Longitude>
+            <Latitude>59.746950</Latitude>
+          </VehicleLocation>
+          <Delay>PT66S</Delay>
+          <BlockRef>Nobina:59014:1e</BlockRef>
+          <VehicleRef>702056</VehicleRef>
+          <PreviousCalls>
+            <PreviousCall>
+              <StopPointRef>2160532:1</StopPointRef>
+              <VisitNumber>46</VisitNumber>
+              <StopPointName>Fredbostubben</StopPointName>
+            </PreviousCall>
+          </PreviousCalls>
+          <MonitoredCall>
+            <StopPointRef>2160225:1</StopPointRef>
+            <VisitNumber>47</VisitNumber>
+            <StopPointName>Torneveien</StopPointName>
+            <VehicleAtStop>false</VehicleAtStop>
+            <DestinationDisplay>Myklerud</DestinationDisplay>
+          </MonitoredCall>
+        </MonitoredVehicleJourney>
+      </VehicleActivity>
+    </VehicleMonitoringDelivery>
+  </ServiceDelivery>
+</Siri>

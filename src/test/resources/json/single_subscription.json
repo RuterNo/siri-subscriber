@@ -1,0 +1,23 @@
+{
+  "internalId": 2,
+  "subscriptionType": "SITUATION_EXCHANGE",
+  "urlMap": {
+    "SUBSCRIBE": "http://localhost:8000/subscribe",
+    "CHECK_STATUS": "http://localhost:8000/subscribe",
+    "DELETE_SUBSCRIPTION": "http://localhost:8000/subscribe"
+  },
+  "active": false,
+  "ssl": false,
+  "vendor": "local-sx",
+  "name": "local-sx",
+  "subscriptionId": "2fe54f27-5ba8-4ece-b728-f64be9f844SX",
+  "activationTime": null,
+  "requestorRef": "local-sx",
+  "subscriberRef": "localSubscriberRef",
+  "heartbeatInterval": "PT1M",
+  "subscriptionDuration": "PT24H",
+  "updateInterval": "PT1S",
+  "changeBeforeUpdates": null,
+  "previewInterval": "PT1S",
+  "incrementalUpdates": true
+}

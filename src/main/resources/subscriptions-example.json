@@ -1,0 +1,49 @@
+[
+  {
+    "internalId": 1,
+    "subscriptionType": "VEHICLE_MONITORING",
+    "urlMap": {
+      "SUBSCRIBE": "http://some-host/subcribe/endpoint",
+      "CHECK_STATUS": "http://some-host/checkstatus/endpoint",
+      "DELETE_SUBSCRIPTION": "http://some-host/delete/endpoint"
+    },
+    "consumerAddress": "http://localhost/some/path",
+    "active": true,
+    "ssl": false,
+    "vendor": "vendorA",
+    "name": "nameA",
+    "subscriptionId": "16608317-48BC-4F91-A4C8-CA7B5E41F20B",
+    "activationTime": null,
+    "requestorRef": "requestorRef",
+    "subscriberRef": "subscriberRef",
+    "heartbeatInterval": "PT5M",
+    "subscriptionDuration": "PT24H",
+    "updateInterval": "PT1S",
+    "changeBeforeUpdates": null,
+    "previewInterval": "PT1S",
+    "incrementalUpdates": true
+  },
+  {
+    "internalId": 2,
+    "subscriptionType": "ESTIMATED_TIMETABLE",
+    "urlMap": {
+      "SUBSCRIBE": "http://some-host/subcribe/endpoint",
+      "CHECK_STATUS": "http://some-host/checkstatus/endpoint",
+      "DELETE_SUBSCRIPTION": "http://some-host/delete/endpoint"
+    },
+    "active": false,
+    "ssl": false,
+    "vendor": "vendorB",
+    "name": "nameB",
+    "subscriptionId": "A47E1003-7F48-4E5C-90B8-F135FE12E3E7",
+    "activationTime": null,
+    "requestorRef": "requestorRef",
+    "subscriberRef": "subscriberRef",
+    "heartbeatInterval": "PT5M",
+    "subscriptionDuration": "PT24H",
+    "updateInterval": "PT1S",
+    "changeBeforeUpdates": null,
+    "previewInterval": "PT1S",
+    "incrementalUpdates": true
+  }
+]

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Siri xmlns="http://www.siri.org.uk/siri" xmlns:ns2="http://www.ifopt.org.uk/acsb" xmlns:ns3="http://www.ifopt.org.uk/ifopt" xmlns:ns4="http://datex2.eu/schema/2_0RC1/2_0" version="2.0">
+    <ServiceDelivery>
+        <ResponseTimestamp>2018-07-11T18:03:21.479+02:00</ResponseTimestamp>
+        <ProducerRef>ENT</ProducerRef>
+        <MoreData>true</MoreData>
+        <SituationExchangeDelivery>
+            <ResponseTimestamp>2018-07-11T18:03:21.479+02:00</ResponseTimestamp>
+            <Situations>
+                <PtSituationElement>
+                    <CreationTime>2018-07-02T09:27:42.8432113+02:00</CreationTime>
+                    <ParticipantRef>RUT</ParticipantRef>
+                    <SituationNumber>52059</SituationNumber>
+                    <Source>
+                        <SourceType>web</SourceType>
+                        <Phone>99127032</Phone>
+                        <AgentReference>unknown</AgentReference>
+                        <TimeOfCommunication>2018-07-02T11:23:22.3769747+02:00</TimeOfCommunication>
+                    </Source>
+                    <Progress>open</Progress>
+                    <ValidityPeriod>
+                        <StartTime>2018-07-02T09:25:00+02:00</StartTime>
+                        <EndTime>2018-07-26T03:30:00+02:00</EndTime>
+                    </ValidityPeriod>
+                    <PublicationWindow/>
+                    <UnknownReason>Unknown</UnknownReason>
+                    <Severity>normal</Severity>
+                    <ScopeType>stopPoint</ScopeType>
+                    <ReportType>incident</ReportType>
+                    <Keywords></Keywords>
+                    <Summary>Stopper ikke på Oslo Hospital</Summary>
+                    <Description>Dette skyldes anleggsarbeid.</Description>
+                    <Detail>Nærmeste alternative stoppested er St. Halvards plass.
+                        Merk! Stoppestedet St. Halvards plass er flyttet 170 mot Ljabru i avviksperioden. </Detail>
+                    <Affects>
+                        <StopPlaces>
+                            <AffectedStopPlace>
+                                <StopPlaceRef>NSR:StopPlace:6535</StopPlaceRef>
+                            </AffectedStopPlace>
+                            <AffectedStopPlace>
+                                <StopPlaceRef>NSR:StopPlace:6512</StopPlaceRef>
+                            </AffectedStopPlace>
+                        </StopPlaces>
+                    </Affects>
+                    <Consequences>
+                        <Consequence>
+                            <Condition>altered</Condition>
+                            <Severity>normal</Severity>
+                        </Consequence>
+                    </Consequences>
+                    <Extensions>
+                        <LastUpdated>2018-07-02T11:23:22.2519738+02:00</LastUpdated>
+                        <ForceResend>false</ForceResend>
+                        <TravelPlannerOff>false</TravelPlannerOff>
+                        <InfoBox1Header/>
+                        <InfoBox2Header/>
+                        <InfoBox1/>
+                        <InfoBox2/>
+                    </Extensions>
+                </PtSituationElement>
+            </Situations>
+        </SituationExchangeDelivery>
+    </ServiceDelivery>
+</Siri>

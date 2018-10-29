@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Siri xmlns="http://www.siri.org.uk/siri" xmlns:ns2="http://www.ifopt.org.uk/acsb" xmlns:ns3="http://www.ifopt.org.uk/ifopt" xmlns:ns4="http://datex2.eu/schema/2_0RC1/2_0" version="2.0">
+    <ServiceDelivery>
+        <ResponseTimestamp>2018-07-11T18:06:49.968+02:00</ResponseTimestamp>
+        <ProducerRef>ENT</ProducerRef>
+        <MoreData>true</MoreData>
+        <VehicleMonitoringDelivery version="2.0">
+            <ResponseTimestamp>2018-07-11T18:06:49.968+02:00</ResponseTimestamp>
+            <VehicleActivity>
+                <RecordedAtTime>2018-07-11T18:05:31.55+02:00</RecordedAtTime>
+                <ItemIdentifier>751341@20c2e3a3-1659-41d3-b1a2-1411978b1d43@25:8562:7-856208</ItemIdentifier>
+                <ValidUntilTime>2018-07-11T18:15:31.55+02:00</ValidUntilTime>
+                <ProgressBetweenStops>
+                    <LinkDistance>1608</LinkDistance>
+                    <Percentage>1.06</Percentage>
+                </ProgressBetweenStops>
+                <MonitoredVehicleJourney>
+                    <LineRef>RUT:Line:25</LineRef>
+                    <DirectionRef>1</DirectionRef>
+                    <FramedVehicleJourneyRef>
+                        <DataFrameRef>2018-07-11</DataFrameRef>
+                        <DatedVehicleJourneyRef>RUT:ServiceJourney:25-8562</DatedVehicleJourneyRef>
+                    </FramedVehicleJourneyRef>
+                    <JourneyPatternRef>25:701</JourneyPatternRef>
+                    <PublishedLineName>25</PublishedLineName>
+                    <OperatorRef>Nobina</OperatorRef>
+                    <OriginRef>NSR:Quay:8079</OriginRef>
+                    <OriginName>Majorstuen</OriginName>
+                    <DestinationRef>NSR:Quay:10054</DestinationRef>
+                    <DestinationName>Lørenskog stasjon</DestinationName>
+                    <HeadwayService>false</HeadwayService>
+                    <OriginAimedDepartureTime>2018-07-11T17:12:00+02:00</OriginAimedDepartureTime>
+                    <DestinationAimedArrivalTime>2018-07-11T18:12:00+02:00</DestinationAimedArrivalTime>
+                    <Monitored>true</Monitored>
+                    <InCongestion>false</InCongestion>
+                    <InPanic>false</InPanic>
+                    <DataSource>RUT</DataSource>
+                    <VehicleLocation srsName="real">
+                        <Longitude>10.897517</Longitude>
+                        <Latitude>59.941233</Latitude>
+                    </VehicleLocation>
+                    <Delay>PT89S</Delay>
+                    <BlockRef>Nobina:2512:0c</BlockRef>
+                    <VehicleRef>751341</VehicleRef>
+                    <PreviousCalls>
+                        <PreviousCall>
+                            <StopPointRef>NSR:Quay:10308</StopPointRef>
+                            <VisitNumber>49</VisitNumber>
+                            <StopPointName>Furuset T</StopPointName>
+                        </PreviousCall>
+                    </PreviousCalls>
+                    <MonitoredCall>
+                        <StopPointRef>NSR:Quay:10409</StopPointRef>
+                        <VisitNumber>50</VisitNumber>
+                        <StopPointName>Folkvangveien</StopPointName>
+                        <VehicleAtStop>false</VehicleAtStop>
+                        <DestinationDisplay>Lørenskog stasjon</DestinationDisplay>
+                    </MonitoredCall>
+                    <OnwardCalls>
+                        <OnwardCall>
+                            <StopPointRef>NSR:Quay:10346</StopPointRef>
+                            <VisitNumber>51</VisitNumber>
+                            <StopPointName>Karihaugen</StopPointName>
+                        </OnwardCall>
+                    </OnwardCalls>
+                </MonitoredVehicleJourney>
+            </VehicleActivity>
+        </VehicleMonitoringDelivery>
+    </ServiceDelivery>
+</Siri>
